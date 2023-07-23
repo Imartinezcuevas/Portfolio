@@ -30,67 +30,84 @@ export default function Home() {
                   <p className={styles.strongText}>Murcia, Spain</p>
                 </div>
                 <p className={styles.heroCenteredParagraph}>
-                  I'm a naturally curious designer with an appetite for No-Code tools, motion design, and tasty food.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu neque sed lorem venenatis fermentum vel elementum nunc. Nunc iaculis augue in erat fringilla scelerisque. Proin eget nibh justo.
                 </p>
               </div>
 
-              <a href='#' className={`${styles.projectCard} ${styles.wInlineBlock}`}>
-                <div className={styles.vStack}>
-                  <div className={styles.vSpace}></div>
-                  <h2>Allergen Detection</h2>
-                  <div className={styles.hStack}>
-                    <p className={styles.smallCapsSubtitle}>Data Analisys</p>
-                    <div className={styles.hSpace8px}></div>
-                    <p className={styles.smallCapsSubtitleLight}>•</p>
-                    <div className={styles.hSpace8px}></div>
-                    <p className={styles.smallCapsSubtitle}>2023</p>
-                  </div>
-                  <div className={styles.vSpaceSmall}></div>
-                  <p> Proyecto Deteccion de alergenos con espectrometria NIR</p>
-                  <div className={styles.primaryButton}>
-                    <div className={styles.buttonText}>Read the Case Study</div>
-                    <Image
-                      src={arrow}
-                      alt="Picture of the author"
-                      className={styles.buttonIcon}
-                    />
-                  </div>
-                </div>
-                <Image
-                    src={proyect}
-                    alt="Picture of the author"
-                    className={styles.projectPreviewImage}
-                  />
-              </a>
+              <div className={styles.heroTextWrapper}>
+                <h2 className={styles.coloredGradientH2}>Background</h2>
+                <p className={styles.centeredParagraph}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu neque sed lorem venenatis fermentum vel elementum nunc. Nunc iaculis augue in erat fringilla scelerisque. Proin eget nibh justo.
+                </p>
+                <p className={styles.centeredParagraph}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu neque sed lorem venenatis fermentum vel elementum nunc. Nunc iaculis augue in erat fringilla scelerisque. Proin eget nibh justo.
+                </p>
+                <p className={styles.centeredParagraph}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu neque sed lorem venenatis fermentum vel elementum nunc. Nunc iaculis augue in erat fringilla scelerisque. Proin eget nibh justo.
+                </p>
+              </div>
 
-              <a href='#' className={`${styles.projectCard} ${styles.wInlineBlock}`}>
-                <div className={styles.vStack}>
-                  <div className={styles.vSpace}></div>
-                  <h2>Allergen Detection</h2>
-                  <div className={styles.hStack}>
-                    <p className={styles.smallCapsSubtitle}>Data Analisys</p>
-                    <div className={styles.hSpace8px}></div>
-                    <p className={styles.smallCapsSubtitleLight}>•</p>
-                    <div className={styles.hSpace8px}></div>
-                    <p className={styles.smallCapsSubtitle}>2023</p>
+              <div className={styles.heroTextWrapper}>
+                <h2 className={styles.coloredGradientH2}>Proyects</h2>
+
+                <a href='#' className={`${styles.projectCard} ${styles.wInlineBlock}`}>
+                  <div className={styles.vStack}>
+                    <div className={styles.vSpace}></div>
+                    <h2>Evaluate Student Summaries</h2>
+                    <div className={styles.hStack}>
+                      <p className={styles.smallCapsSubtitle}>Data Analisys</p>
+                      <div className={styles.hSpace8px}></div>
+                      <p className={styles.smallCapsSubtitleLight}>•</p>
+                      <div className={styles.hSpace8px}></div>
+                      <p className={styles.smallCapsSubtitle}>2023</p>
+                    </div>
+                    <div className={styles.vSpaceSmall}></div>
+                    <p> Automatically assess summaries written by students in grades 3-12.</p>
+                    <div className={styles.primaryButton}>
+                      <div className={styles.buttonText}>Read the Case Study</div>
+                      <Image
+                        src={arrow}
+                        alt="Picture of the author"
+                        className={styles.buttonIcon}
+                      />
+                    </div>
                   </div>
-                  <div className={styles.vSpaceSmall}></div>
-                  <p> Proyecto Deteccion de alergenos con espectrometria NIR</p>
-                  <div className={styles.primaryButton}>
-                    <div className={styles.buttonText}>Read the Case Study</div>
-                    <Image
-                      src={arrow}
+                  <Image
+                      src={proyect}
                       alt="Picture of the author"
-                      className={styles.buttonIcon}
+                      className={styles.projectPreviewImage}
                     />
+                </a>
+
+                <a href='#' className={`${styles.projectCard} ${styles.wInlineBlock}`}>
+                  <div className={styles.vStack}>
+                    <div className={styles.vSpace}></div>
+                    <h2>Allergen Detection</h2>
+                    <div className={styles.hStack}>
+                      <p className={styles.smallCapsSubtitle}>Data Analisys</p>
+                      <div className={styles.hSpace8px}></div>
+                      <p className={styles.smallCapsSubtitleLight}>•</p>
+                      <div className={styles.hSpace8px}></div>
+                      <p className={styles.smallCapsSubtitle}>2023</p>
+                    </div>
+                    <div className={styles.vSpaceSmall}></div>
+                    <p> Proyecto Deteccion de alergenos con espectrometria NIR</p>
+                    <div className={styles.primaryButton}>
+                      <div className={styles.buttonText}>Read the Case Study</div>
+                      <Image
+                        src={arrow}
+                        alt="Picture of the author"
+                        className={styles.buttonIcon}
+                      />
+                    </div>
                   </div>
-                </div>
-                <Image
-                    src={proyect}
-                    alt="Picture of the author"
-                    className={styles.projectPreviewImage}
-                  />
-              </a>
+                  <Image
+                      src={proyect}
+                      alt="Picture of the author"
+                      className={styles.projectPreviewImage}
+                    />
+                </a>
+              </div>  
             </div>
           </div>
         </div>
