@@ -1,10 +1,13 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Image from "next/image";
+import arrow from '../images/arrow.svg'
+import proyect from '../images/test.png'
+import position from '../images/position.svg'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Iván Martínez</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,6 +22,11 @@ export default function Home() {
                   Hi, I'm Iván.
                 </h1>
                 <div className={styles.locationWrapper}>
+                  <Image
+                    src={position}
+                    alt="Picture of the author"
+                    className={styles.locationIcon}
+                  />
                   <p className={styles.strongText}>Murcia, Spain</p>
                 </div>
                 <p className={styles.heroCenteredParagraph}>
@@ -29,7 +37,7 @@ export default function Home() {
               <a href='#' className={`${styles.projectCard} ${styles.wInlineBlock}`}>
                 <div className={styles.vStack}>
                   <div className={styles.vSpace}></div>
-                  <h2>Project 1</h2>
+                  <h2>Allergen Detection</h2>
                   <div className={styles.hStack}>
                     <p className={styles.smallCapsSubtitle}>Data Analisys</p>
                     <div className={styles.hSpace8px}></div>
@@ -38,27 +46,55 @@ export default function Home() {
                     <p className={styles.smallCapsSubtitle}>2023</p>
                   </div>
                   <div className={styles.vSpaceSmall}></div>
-                  <p> Texto de ejemplo fjkdalsfjkldasjf jfdklasfjñladsj fajsdklfjaldsf</p>
+                  <p> Proyecto Deteccion de alergenos con espectrometria NIR</p>
                   <div className={styles.primaryButton}>
                     <div className={styles.buttonText}>Read the Case Study</div>
+                    <Image
+                      src={arrow}
+                      alt="Picture of the author"
+                      className={styles.buttonIcon}
+                    />
                   </div>
                 </div>
+                <Image
+                    src={proyect}
+                    alt="Picture of the author"
+                    className={styles.projectPreviewImage}
+                  />
+              </a>
+
+              <a href='#' className={`${styles.projectCard} ${styles.wInlineBlock}`}>
+                <div className={styles.vStack}>
+                  <div className={styles.vSpace}></div>
+                  <h2>Allergen Detection</h2>
+                  <div className={styles.hStack}>
+                    <p className={styles.smallCapsSubtitle}>Data Analisys</p>
+                    <div className={styles.hSpace8px}></div>
+                    <p className={styles.smallCapsSubtitleLight}>•</p>
+                    <div className={styles.hSpace8px}></div>
+                    <p className={styles.smallCapsSubtitle}>2023</p>
+                  </div>
+                  <div className={styles.vSpaceSmall}></div>
+                  <p> Proyecto Deteccion de alergenos con espectrometria NIR</p>
+                  <div className={styles.primaryButton}>
+                    <div className={styles.buttonText}>Read the Case Study</div>
+                    <Image
+                      src={arrow}
+                      alt="Picture of the author"
+                      className={styles.buttonIcon}
+                    />
+                  </div>
+                </div>
+                <Image
+                    src={proyect}
+                    alt="Picture of the author"
+                    className={styles.projectPreviewImage}
+                  />
               </a>
             </div>
           </div>
         </div>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
